@@ -1,15 +1,14 @@
 ﻿Console.WriteLine("Введите значение N");
 int N = Convert.ToInt32(Console.ReadLine());
-int a = 0;
+int index = 0;
+int[] numbers = {1:N}
 
-while (true)
-    if (a > N)
-    {
-        break
-    }
-if (a % 2 == 0)
+while (index < N)
 {
-    Console.WriteLine("четные числа");
-    Console.Write(a);
+    if (numbers[index] % 2 == 0)  
+    
+    Console.WriteLine("четное число");
+    Console.Write(numbers[index]);
+  
 }
-int a = (a + 1);
+index = (index + 1);
